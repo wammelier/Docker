@@ -31,3 +31,18 @@ docker ps -a : 실행중이지 않지만 현재 죽어있는 도커 프로세서
 docker stop [imageName] : 컨이테너 중단<br/>
 docker start [imageName] : 도커이미지 실행
 docker rm : 도커 이미지 삭제<br/>
+<br/><brr/>
+
+## Network 이해
+
+![생활코딩에서](./WebImg.PNG)
+생활코딩에서 가져온 자료<br/>
+--> 핵심포인트는 WebServer도 결국 FileSystem을 이용하는 것이다.<br/>
+--> Docker 내에서도 FileSystem이 따로 존재한다.
+
+<br/><br/>
+![](./WebImg2.PNG)
+Host 란 ?<br/>
+DockerContainer 가 실행중이 OS를 뜻함<br/>
+
+Docker 실행옵션 : docker run -p [Host의 포트]:[Container의 포트] [imageName]
