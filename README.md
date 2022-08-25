@@ -45,4 +45,5 @@ docker rm : 도커 이미지 삭제<br/>
 Host 란 ?<br/>
 DockerContainer 가 실행중이 OS를 뜻함<br/>
 
-Docker 실행옵션 : docker run -p [Host의 포트]:[Container의 포트] [imageName]
+Docker 실행옵션 : docker run -p [Host의 포트]:[Container의 포트] [imageName]<br/>
+Docker CLI 접속 : docker exec -it(shell 을 실행하고 유지시킬수 있는 옵션) [containerName]<br/>
