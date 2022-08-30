@@ -46,4 +46,5 @@ Host 란 ?<br/>
 DockerContainer 가 실행중이 OS를 뜻함<br/>
 
 Docker 실행옵션 : docker run -p [Host의 포트]:[Container의 포트] [imageName]<br/>
-Docker CLI 접속 : docker exec -it(shell 을 실행하고 유지시킬수 있는 옵션) [containerName]<br/>
+Docker CLI 접속 : docker exec -it(shell 을 실행하고 유지시킬수 있는 옵션) [containerName]<br/><br/>
+Host 내의 FileSystem 을 이용하여 Docker Container와 연동하기 : <br/>docker run -p 8888:80 -v[volume 의 약자] ~/workspace/Docker/htdocs[local directory]:/usr/local/apache2/htdocs/ httpd[HostDirectory]
